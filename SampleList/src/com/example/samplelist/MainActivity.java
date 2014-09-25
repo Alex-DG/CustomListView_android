@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         final JsonDownloaderTask task = new JsonDownloaderTask(this);
-        task.execute(url); //download json data and set to wallpaper object and set Lazyadapter
+        task.execute(url); //download json data in background
         
         listV = (ListView) findViewById(R.id.list);
         
